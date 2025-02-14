@@ -1,20 +1,21 @@
 test = {
-  'name': 'test_ses05_solution_selection_sort_1',
+  'name': 'test_ses06_solution_count_characters_2',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> selection_sort([1, 13, -23, 2.7, -3, 5, 7.5])
-          [-23, -3, 1, 2.7, 5, 7.5, 13]
+          >>> x = count_characters('hello')
+          >>> print(x['h'])
+          1
           """,
           'hidden': False
         }
       ],
       'scored': True,
       'setup': r"""
-      >>> from ses05 import *
+      >>> from ses06 import *
       """,
       'teardown': '',
       'type': 'doctest'

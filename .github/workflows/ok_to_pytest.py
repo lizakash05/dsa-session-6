@@ -16,17 +16,32 @@ def run_ok_test(test_name):
     # If we didn't find the test
     assert False, f"Could not find score for {test_name}"
 
-def test_find_min_index_0():
-    run_ok_test("test_ses05_solution_find_min_index_0")
+def test_count_characters_0():
+    run_ok_test("test_ses06_solution_count_characters_0")
 
-def test_find_min_index_1():
-    run_ok_test("test_ses05_solution_find_min_index_1")
+def test_count_characters_1():
+    run_ok_test("test_ses06_solution_count_characters_1")
 
-def test_selection_sort_0():
-    run_ok_test("test_ses05_solution_selection_sort_0")
+def test_count_characters_2():
+    run_ok_test("test_ses06_solution_count_characters_2")
 
-def test_selection_sort_1():
-    run_ok_test("test_ses05_solution_selection_sort_1")
+def test_count_characters_3():
+    run_ok_test("test_ses06_solution_count_characters_3")
 
-def test_sort_by_key_0():
-    run_ok_test("test_ses05_solution_sort_by_key_0")
+def test_count_words_0():
+    run_ok_test("test_ses06_solution_count_words_0")
+
+def test_count_words_1():
+    run_ok_test("test_ses06_solution_count_words_1")
+
+def test_divide_0():
+    run_ok_test("test_ses06_solution_divide_0")
+
+def test_divide_1():
+    run_ok_test("test_ses06_solution_divide_1")
+
+def test_print_dict_values_0():
+    run_ok_test("test_ses06_solution_print_dict_values_0")
+
+def test_print_dict_values_1():
+    run_ok_test("test_ses06_solution_print_dict_values_1")

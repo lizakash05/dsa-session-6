@@ -1,20 +1,20 @@
 test = {
-  'name': 'test_ses05_solution_find_min_index_1',
+  'name': 'test_ses06_solution_count_characters_0',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> find_min_index([1, 1, 1, 5, 9], 2)
-          2
+          >>> count_characters('aaaa')
+          {'a': 4}
           """,
           'hidden': False
         }
       ],
       'scored': True,
       'setup': r"""
-      >>> from ses05 import *
+      >>> from ses06 import *
       """,
       'teardown': '',
       'type': 'doctest'
