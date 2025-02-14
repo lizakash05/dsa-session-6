@@ -25,7 +25,7 @@ jobs:
       uses: classroom-resources/autograding-python-grader@v1
       with:
         timeout: 1
-        max-score: 5
+        max-score: 10
         setup-command: 'pip install pandas==2.1.4 jupyter==1.0.0 networkx==3.2.1'
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
