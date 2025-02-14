@@ -18,6 +18,8 @@
   "extensions": [
     "ms-python.python",
     "searking.preview-vscode",
-    "noahsyn10.pydoctestbtn"
-  ]
+    "noahsyn10.pydoctestbtn",
+    "ms-toolsai.jupyter"
+  ],
+  "postCreateCommand": "pip install pandas matplotlib bs4 requests"
 }
