@@ -21,5 +21,5 @@
     "noahsyn10.pydoctestbtn",
     "ms-toolsai.jupyter"
   ],
-  "postCreateCommand": "pip install pandas matplotlib bs4 requests"
+  "postCreateCommand": "pip install pandas matplotlib bs4 requests lxml"
 }
