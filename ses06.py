@@ -21,6 +21,11 @@ def print_dict_values(a):
     """
     # DON'T CHANGE ANYTHING ABOVE
     # YOUR CODE BELOW THIS
+    sorted_keys = sorted(a.keys())
+    for key in sorted_keys:
+        print(key, a[key])
+
+    return len(a)
     
     
 def count_characters(a):
@@ -47,6 +52,13 @@ def count_characters(a):
     """
     # DON'T CHANGE ANYTHING ABOVE
     # YOUR CODE BELOW THIS
+    char_count = {}
+    for char in a:
+        if char not in char_count:
+            char_count[char] = 1
+        else:
+            char_count[char] += 1
+    return char_count
 
 
 def divide(a, b):
@@ -68,6 +80,11 @@ def divide(a, b):
     """
     # DON'T CHANGE ANYTHING ABOVE
     # YOUR CODE BELOW THIS
+    try:
+        return a/b
+    except ZeroDivisionError:
+        print('No division by 0.')
+        return None
 
 
 def count_words(a):
@@ -92,6 +109,15 @@ def count_words(a):
     """
     # DON'T CHANGE ANYTHING ABOVE
     # YOUR CODE BELOW THIS
+    word_counts = {}
+    a_list = a.split()
+    for word in a_list:
+        if word not in word_counts:
+            word_counts[word] = 1
+        else:
+            word_counts[word] += 1
+
+    return word_counts
 
 
 

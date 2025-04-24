@@ -28,6 +28,16 @@ def caesar_cipher_encrypt(str_to_encrypt, n):
     # DON'T CHANGE ANYTHING ABOVE
     # YOUR CODE BELOW THIS
     alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    encrypted = []
+    for char in str_to_encrypt:
+        if char in alphabet:
+            original_pos = alphabet.index(char) # finds the position (0-25) of char in the alphabet
+            new_pos = (original_pos + n) % 26 # if the shift goes beyond 'z', it loops back to 'a'
+            encrypted.append(alphabet[new_pos])
+        else:
+            encrypted.append(char)
+    
+    return ''.join(encrypted)
     
 
 def caesar_cipher_decrypt(str_to_decrypt, n):
@@ -55,6 +65,16 @@ def caesar_cipher_decrypt(str_to_decrypt, n):
     # DON'T CHANGE ANYTHING ABOVE
     # YOUR CODE BELOW THIS
     alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    decrypted = []
+    for char in str_to_decrypt:
+        if char in alphabet:
+            encrypted_pos = alphabet.index(char)
+            decrypted_pos = (encrypted_pos - n) % 26
+            decrypted.append(alphabet[decrypted_pos])
+        else:
+            decrypted.append(char)
+    return ''.join(decrypted)
+
     
 
 
